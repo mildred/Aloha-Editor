@@ -113,7 +113,7 @@ define([
 			for (i = 0; i < components.length; i++) {
 				if (typeof components[i] === 'string') {
 					if (1 === components[i].length && components[i].charCodeAt(0) === 10) {
-						this.panel.append('<div>', {'unselectable': 'on'});
+						this.panel.append($('<div>', {'unselectable': 'on'}));
 					} else {
 						elem = $('<span>', {'unselectable': 'on'});
 						this._elemBySlot[components[i]] = elem;

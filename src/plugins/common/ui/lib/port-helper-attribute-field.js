@@ -68,7 +68,7 @@ define([
 			placeholder = props.placeholder,
 			noTargetHighlight = !!props.noTargetHighlight,
 			targetHighlightClass = props.targetHighlightClass,
-			element = props.element ? $(props.element) : $('<input id="aloha-attribute-field-' + props.name + '">'),
+			element = props.element ? $(props.element) : $('<input id="aloha-attribute-field-' + props.name + '"/>'),
 			component,
 			template,
 			resourceItem,

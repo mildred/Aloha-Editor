@@ -773,7 +773,7 @@ define([
 				this.id = 'aloha-sidebar-' + (++uid);
 			}
 
-			var li = this.element = $('<li id="' + this.id + '">').append(this.title, this.content);
+			var li = this.element = $('<li id="' + this.id + '"></li>').append(this.title, this.content);
 
 			if (this.expanded) {
 				this.content.height('auto');
@@ -943,7 +943,7 @@ define([
 		setContent: function (html) {
 			// We do this so that empty panels don't appear collapsed
 			if (!html || html === '') {
-				html = '&nbsp;';
+				html = '&#160;';
 			}
 
 			this.content.find('.aloha-sidebar-panel-content-inner-text').html(html);

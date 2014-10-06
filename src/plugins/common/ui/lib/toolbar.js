@@ -133,7 +133,7 @@ define([
 		},
 
 		addPin: function () {
-			var $pin = $('<div class="aloha-ui-pin">');
+			var $pin = $('<div class="aloha-ui-pin"></div>');
 			var $element = this.$element;
 			$element.find('.ui-tabs').append($pin);
 			$element.find('.ui-tabs').hover(function () {
