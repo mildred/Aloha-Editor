@@ -360,7 +360,7 @@
 		};
 
 		var defaultPaths = {
-			jquery: 'vendor/jquery-1.7.2',
+			jquery: 'vendor/jquery-1.11.1',
 			jqueryui: 'vendor/jquery-ui-1.9.0.custom-aloha'
 		};
 

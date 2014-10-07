@@ -322,7 +322,7 @@ define([
 	 * @param {Surface} surface
 	 */
 	function setPositionStyleToFixed(surface) {
-		if ($.browser.msie) {
+		if ($.browser && $.browser.msie) {
 			var $parent = surface.$element.parent();
 			surface.$element.appendTo('body');
 			surface.$element.css('position', POSITION_STYLE);
